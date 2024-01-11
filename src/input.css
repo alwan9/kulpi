@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --oren-brand1: #ff7b00;
+  --oren-brand2: #cd540a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+img {
+  width: 100%;
+}
+
+.glass {
+  background: rgba(0, 0, 0, 0.511);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: bolder;
+  line-height: 6rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+  color: var(--oren-brand1);
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+header {
+  background-image: url(./../asset/bg.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.bg-video {
+  background-image: url(../asset/bgVideo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gambar1 {
+  background-image: url(../asset/produk/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gambar2 {
+  background-image: url(../asset/produk/3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gambar3 {
+  background-image: url(../asset/produk/7.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gambar4 {
+  background-image: url(../asset/produk/2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+iframe {
+  border-radius: 20%;
+}
+
+.nama {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.tgl {
+  color: #686868;
+}
+
+/* responsive font */
+/* tablet */
+@media screen and (max-width: 1023px) {
+  h1 {
+    font-size: 3.2rem;
+    font-weight: bolder;
+    line-height: 3rem;
+  }
+  h2 {
+    font-size: 3.2rem;
+    font-weight: bolder;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+}
